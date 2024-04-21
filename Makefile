@@ -2,9 +2,6 @@ FLAGS = -Werror -std=c++11 -g
 LINKER_FLAGS = $(FLAGS)
 CC = g++
 
-ifneq ($(OS),Windows_NT)
-	LINKER_FLAGS += -lncurses
-endif
 
 all: main
 
